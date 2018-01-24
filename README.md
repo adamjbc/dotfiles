@@ -8,6 +8,7 @@ Useful sources I have used for inspiration include:
 
 - https://github.com/jessfraz/dotfiles
 - https://dougblack.io/words/a-good-vimrc.html
+- https://superuser.com/questions/596183/how-can-i-change-my-linux-terminals-appearance-when-i-ssh-in-to-a-remote-mach
 
 
 ## Installation
@@ -20,3 +21,6 @@ ln -sf ~/projects/dotfiles/.vimrc ~
 mkdir ~/.vim/colors/
 ln -sf ~/projects/dotfiles/solarized.vim ~/.vim/colors
 ```
+
+Or whatever equivalent is most relevant for your OS.
+
