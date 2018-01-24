@@ -44,8 +44,10 @@ Whi='\[\e[0;37m\]'  # White
 
 # Host specific commands
 case $HOSTNAME in
-    PC0Q6ROW | PC0NWAY2)
+    PC0Q6ROW)
         export PATH=/c/Program\ Files/Git/usr/bin/:$PATH
+        ;;
+    PC0NWAY2)
         ;;
     Boris.local)
         alias showFiles="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
