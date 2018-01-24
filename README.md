@@ -16,7 +16,7 @@ Useful sources I have used for inspiration include:
 No fancy installation as yet.  Just copy things to the right places.  Ideally with symlinks so it is easy to update.
 
 ```
-ln -sf ~/projects/dotfiles/.bashrc ~ 
+ln -sf ~/projects/dotfiles/.bashrc ~
 ln -sf ~/projects/dotfiles/.vimrc ~
 mkdir ~/.vim/colors/
 ln -sf ~/projects/dotfiles/solarized.vim ~/.vim/colors
