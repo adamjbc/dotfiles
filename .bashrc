@@ -7,16 +7,6 @@ alias dl="cd ~/Downloads"
 alias h="history"
 alias hg="history | grep"
 
-# ls colours (OS dependent)
-if ls --color > /dev/null 2>&1; then    # GNU ls
-	colorflag="--color"
-else                                    # MaxOS ls
-	colorflag="-G"
-fi
-
-# List in long format
-alias ls="ls -alf ${colorflag}"
-
 # Enable sudo on aliases
 alias sudo="sudo "
 
@@ -45,9 +35,12 @@ Whi='\[\e[0;37m\]'  # White
 # Host specific commands
 case $HOSTNAME in
     PC0Q6ROW)
-        export PATH=/c/Program\ Files/Git/usr/bin/:$PATH
+        export PATH=/mingw64/bin:/usr/local/bin:/usr/bin:/bin:$PATH
+        alias ls="ls -alF --color"
         ;;
     PC0NWAY2)
+        export PATH=/mingw64/bin:/usr/local/bin:/usr/bin:/bin:$PATH
+        alias ls="ls -alF --color"
         ;;
     Boris.local)
         alias showFiles="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
