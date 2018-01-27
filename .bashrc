@@ -46,12 +46,15 @@ case $HOSTNAME in
         alias showFiles="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
         alias hideFiles="defaults write com.apple.finder AppleShowAllFiles NO;  killall Finder /System/Library/CoreServices/Finder.app"
         PS1="${Gre}\u@\h:${RCol}\W\$ "
+        alias ls="ls -alFG"
         ;;
     archie)
         PS1="${Red}\u@\h:${RCol}\W\$ "
+        alias ls="ls -alFG"
         ;;
     bob)
         PS1="${Blu}\u@\h:${RCol}\W\$ "
+        alias ls="ls -alF --color"
         ;;
 esac
 
