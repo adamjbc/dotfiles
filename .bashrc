@@ -34,7 +34,7 @@ Whi='\[\e[0;37m\]'  # White
 
 # Host specific commands
 case $HOSTNAME in
-    PC0Q6ROW)
+    PC0Q6R0W)
         export PATH=/mingw64/bin:/usr/local/bin:/usr/bin:/bin:$PATH
         alias ls="ls -alF --color"
         ;;
